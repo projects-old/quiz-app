@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Phoenix Street Names Quiz App</title>
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+   <meta name="description" content="Quiz App about the History of the City of Phoenix" />
+
+    <!-- Normalize.css, a cross-browser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+    <!-- Stylesheet and Google Fonts -->
+          <link href="styles.css" rel="stylesheet" type="text/css" />
+          <link href="https://fonts.googleapis.com/css?family=Overpass|Roboto&display=swap" rel="stylesheet">
+
+  </head>
+  <header>
+
+    <p class="score" id="score"> </p>
+    <p class="question" id="question"> </p>
+  </header>
+  <body role="body">
+    <div class="container">
+      <section class="mainpage">
+        <img src="images/Phoenix_map_1885.jpg" alt="Phoenix Map in 1885" />
+    <h1>Phoenix Street Names Quiz</h1>
+     <p>Think you know everything about how the City of Phoenix got its street names? Take the quiz to find out!</p>
+        <br />
+        <button class="button btn-start">Start</button>
+        <br />
+      </section>
+    </div>
+    <div class="quiz">
+      <section class="question-container">
+        <h3 class="question"> </h3>
+          <form>
+            <div tabindex="0">
+              <input type="radio" id="A" name="phxstname" value="">
+              <label for="A"></label>
+              <div class="check"></div>
+            </div>
+            <div tabindex="0">
+              <input type="radio" id="B" name="phxstname" value="">
+              <label for="B"></label>
+              <div class="check"></div>
+            </div>
+            <div tabindex="0">
+              <input type="radio" id="C" name="phxstname" value="">
+              <label for="C"></label>
+              <div class="check"></div>
+            </div>
+            <div tabindex="0">
+              <input type="radio" id="D" name="phxstname" value="">
+              <label for="D"></label>
+              <div class="check"></div>
+            </div>
+            <button class="button btn-submit"> Submit </button>
+          </form>
+      </section>
+      <section class="answer-container">
+        <p class="answer" id="answer"></p>
+        <p class="answerDescription" id="answerDescription"></p>
+        <div class="response-display">
+          <img id="answerImage" class="answerImage" src=""/>
+          <p class="explanation" id="statement" value=""> </p>
+          <button class="button btn-next"> Next Question </button>
+          <br />
+        </div>
+      </section>
+      <br />
+      <button class="button btn-final" id="Restart Quiz"> Restart Quiz </button>
+      <br />
+    </div>
+    <footer>
+         <p>
+           <cite>Sources:</cite><a href="http://www.historyadventuring.com/2015/05/the-history-of-street-names-in-phoenix.html" target="_blank"><br /> History Adventuring </a>
+           <br />
+           <a href="https://www.phoenixnewtimes.com/news/10-weirdest-street-names-in-metro-phoenix-7856549" target="_blank">Phoenix New Times</a>
+           <br />
+           <a href="http://www.bradhallart.com/greenway.htm" target="_blank">Brad Hallart</a>
+         </p>
+       </footer>
+  <!-- JavaScript / jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/quiz.js"></script>
+  </body>
+</html>
